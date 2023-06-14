@@ -30,6 +30,14 @@ const PricingCard = ({
           offeredPrice,
       })}
     >
+      {offeredPrice && (
+        <Button
+          outline
+          className='text-white border-none bg-themeBg-ellipse-light'
+        >
+          Buy now
+        </Button>
+      )}
       <div className='flex gap-1'>
         <span
           className={cn('text-xl font-semibold text-gray-500', {
