@@ -17,7 +17,7 @@ export default function TextImage({
     <section className='grid items-center grid-cols-2'>
       <Image src={src} alt='people image' width={590} height={444} />
       <div>
-        <Heading className='text-4xl'>{heading}</Heading>
+        <Heading className='mb-4 text-4xl leading-normal'>{heading}</Heading>
         <GrayText>{grayText}</GrayText>
       </div>
     </section>
