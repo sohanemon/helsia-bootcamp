@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Button from './button';
 
 export default function Navbar() {
   return (
@@ -10,6 +11,7 @@ export default function Navbar() {
             {el}
           </li>
         ))}
+        <Button>Signup Today</Button>
       </ul>
     </nav>
   );
