@@ -12,6 +12,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        themeBg: { gray: '#F4CDD6' },
         themeBlue: '#264373',
         themeIndigo: {
           dark: '#6462F0',
@@ -19,7 +20,6 @@ module.exports = {
         },
         themeText: {
           dark: '#262524',
-          light: '#262524',
         },
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
