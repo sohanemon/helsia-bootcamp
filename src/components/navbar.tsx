@@ -1,3 +1,9 @@
+import Image from 'next/image';
+
 export default function Navbar() {
-  return <></>;
+  return (
+    <nav>
+      <Image src={'/assets/logo.svg'} alt='logo' />
+    </nav>
+  );
 }
