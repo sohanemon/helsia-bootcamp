@@ -12,7 +12,10 @@ module.exports = {
     },
     extend: {
       colors: {
-        themeBg: { gray: '#F4CDD6' },
+        themeBg: {
+          gray: '#F4CDD6',
+          ellipse: { pink: '#D388FF', yellow: '#F3B411', light: '#F4CDD6' },
+        },
         themeBlue: '#264373',
         themeIndigo: {
           dark: '#6462F0',
