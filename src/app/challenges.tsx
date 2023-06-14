@@ -9,7 +9,7 @@ export default function Challenges() {
             <Image src={el.icon} alt='icon' width={50} height={50} />
           </div>
           <div>
-            <p className='font-semibold leading-7'>{el.text}</p>
+            <p className='font-semibold leading-7 text-white'>{el.text}</p>
           </div>
         </div>
       ))}
@@ -20,14 +20,14 @@ export default function Challenges() {
 const data = [
   {
     text: 'Get that 11 line in 30 days',
-    icon: '/public/assets/crucified.svg',
+    icon: '/assets/crucified.svg',
   },
   {
     text: '14 Days sherd challenge',
-    icon: '/public/assets/dancer.svg',
+    icon: '/assets/dancer.svg',
   },
   {
     text: 'Get flat belly in 30 days',
-    icon: '/public/assets/dancer-motion.svg',
+    icon: '/assets/dancer-motion.svg',
   },
 ];
