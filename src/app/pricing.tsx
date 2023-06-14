@@ -1,6 +1,7 @@
 import Button from '@/components/ui/button';
 import GrayText from '@/components/ui/gray-text';
 import Heading from '@/components/ui/heading';
+import Image from 'next/image';
 
 export default function Pricing() {
   return (
@@ -27,6 +28,19 @@ const PricingCard = ({
       <Heading className='text-xl'>Plan {idx}</Heading>
       <GrayText>Best choice for individuals</GrayText>
       <Button outline>Buy now</Button>
+      <ul>
+        {Array.from(Array(4)).map((el, idx) => (
+          <li key={idx} className='flex gap-2'>
+            <Image
+              src={'/assets/point-pink.svg'}
+              alt='icon'
+              width={8}
+              height={8}
+            />
+            <GrayText>Pricing Info Point</GrayText>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
