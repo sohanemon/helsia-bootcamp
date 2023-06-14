@@ -26,7 +26,7 @@ const PricingCard = ({
         <p className='text-6xl font-semibold text-themeIndigo-light'>{price}</p>
       </div>
       <Heading className='text-xl'>Plan {idx}</Heading>
-      <GrayText>Best choice for individuals</GrayText>
+      <GrayText>{title}</GrayText>
       <Button outline>Buy now</Button>
       <ul className='space-y-2'>
         {Array.from(Array(4)).map((el, idx) => (
