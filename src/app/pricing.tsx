@@ -26,7 +26,7 @@ const PricingCard = ({
   return (
     <div
       className={cn('p-10 space-y-5', {
-        'bg-gradient-to-r from-themeIndigo-dark to-themeIndigo-light rounded-lg h-[105%] self-end':
+        'bg-gradient-to-r from-themeIndigo-dark to-themeIndigo-light rounded-lg h-[105%] self-end [&_li]!text-gray-100':
           offeredPrice,
       })}
     >
@@ -38,7 +38,13 @@ const PricingCard = ({
         >
           $
         </span>
-        <p className='text-6xl font-semibold text-themeIndigo-light'>{price}</p>
+        <p
+          className={cn('text-6xl font-semibold text-themeIndigo-light', {
+            'text-white': offeredPrice,
+          })}
+        >
+          {price}
+        </p>
       </div>
       <Heading className='text-xl'>Plan {idx}</Heading>
       <GrayText>{title}</GrayText>
