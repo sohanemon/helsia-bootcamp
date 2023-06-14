@@ -20,7 +20,7 @@ export default function TextImage({
         alt='people image'
         width={590}
         height={444}
-        className={rtl ? 'order-last' : ''}
+        className={rtl ? 'order-last ml-10' : '-ml-10'}
       />
       <div>
         <Heading className='mb-4 text-4xl leading-normal'>{heading}</Heading>
