@@ -3,13 +3,14 @@ import { HtmlHTMLAttributes } from 'react';
 
 export default function Button({
   className,
+  white,
   ...props
-}: HtmlHTMLAttributes<HTMLButtonElement>) {
+}: HtmlHTMLAttributes<HTMLButtonElement> & { white?: boolean }) {
   return (
     <button
       className={cn(
-        'h-12 bg-themeBlue rounded-xl shadow-2xl text-white px-8',
-        {},
+        'h-12 bg-themeBlue rounded-xl flex items-center gap-5 shadow-2xl text-white px-8',
+        { 'bg-white text-themeBlue': white },
         className
       )}
       {...props}
