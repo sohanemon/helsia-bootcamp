@@ -26,7 +26,7 @@ const PricingCard = ({
   return (
     <div
       className={cn('p-10 space-y-5', {
-        'bg-gradient-to-r from-themeIndigo-dark to-themeIndigo-light rounded-lg h-[105%] self-end [&_li]!text-gray-100':
+        'bg-gradient-to-r from-themeIndigo-dark to-themeIndigo-light rounded-lg h-[105%] self-end':
           offeredPrice,
       })}
     >
