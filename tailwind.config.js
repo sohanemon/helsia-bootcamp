@@ -17,6 +17,7 @@ module.exports = {
           dark: '#6462F0',
           light: '#9190E9',
         },
+        themeText: {},
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
