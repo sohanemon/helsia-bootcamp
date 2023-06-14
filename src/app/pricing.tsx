@@ -5,10 +5,13 @@ import Image from 'next/image';
 
 export default function Pricing() {
   return (
-    <section className='grid grid-cols-3 gap-20 bg-white rounded-lg shadow'>
+    <section className='relative grid grid-cols-3 gap-20 bg-white rounded-lg rounded-tl-none shadow'>
       {data.map((el, idx) => (
         <PricingCard {...el} key={el.price} idx={idx + 1} />
       ))}
+      <div className='absolute grid h-12 font-bold bg-white rounded-lg rounded-b-none shadow px-9 -top-12 font-grot text-themeBlue place-content-center'>
+        Pricing Plan
+      </div>
     </section>
   );
 }
