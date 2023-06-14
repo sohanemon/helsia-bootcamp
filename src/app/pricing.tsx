@@ -1,6 +1,6 @@
 export default function Pricing() {
   return (
-    <section className='bg-white'>
+    <section className='grid grid-cols-3 bg-white'>
       {data.map((el, idx) => (
         <PricingCard {...el} key={el.price} idx={idx} />
       ))}

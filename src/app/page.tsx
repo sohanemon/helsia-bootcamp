@@ -2,6 +2,7 @@ import Cta from '@/components/cta';
 import IntenseEffective from './intense-&-effective';
 import Challenges from './challenges';
 import TextImage from './text-&-image';
+import Pricing from './pricing';
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         heading='Providing Food and Accommodation for your Journey'
         grayText='During the training program, we provide healthy, delicious meals cooked from scratch. Enjoy a balanced diet that fuels your body for optimal performance.'
       />
+      <Pricing />
     </main>
   );
 }
