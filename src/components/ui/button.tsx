@@ -13,7 +13,7 @@ export default function Button({
   return (
     <button
       className={cn(
-        'h-12 bg-themeBlue rounded-xl whitespace-nowrap flex items-center gap-5 shadow-2xl text-white px-8',
+        'h-12 font-semibold bg-themeBlue rounded-xl whitespace-nowrap flex items-center gap-5 shadow-2xl text-white px-8',
         {
           'bg-white text-themeBlue': white,
           'bg-transparent text-themeBlue border-current border shadow-none w-full flex justify-center':

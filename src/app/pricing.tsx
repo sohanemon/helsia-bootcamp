@@ -46,19 +46,32 @@ const PricingCard = ({
           {price}
         </p>
       </div>
-      <Heading className='text-xl'>Plan {idx}</Heading>
-      <GrayText>{title}</GrayText>
-      <Button outline>Buy now</Button>
+      <Heading className={cn('text-xl', { 'text-gray-100': offeredPrice })}>
+        Plan {idx}
+      </Heading>
+      <GrayText className={cn({ 'text-gray-300': offeredPrice })}>
+        {title}
+      </GrayText>
+      <Button
+        outline
+        className={cn({
+          'text-white bg-themeBg-ellipse-light border-none': offeredPrice,
+        })}
+      >
+        Buy now
+      </Button>
       <ul className='space-y-2'>
         {Array.from(Array(4)).map((el, idx) => (
           <li key={idx} className='flex gap-2'>
             <Image
-              src={'/assets/point-pink.svg'}
+              src={`/assets/point-${offeredPrice ? 'white' : 'pink'}.svg`}
               alt='icon'
-              width={8}
-              height={8}
+              width={13}
+              height={13}
             />
-            <GrayText>Pricing Info Point</GrayText>
+            <GrayText className={cn({ 'text-gray-300': offeredPrice })}>
+              Pricing Info Point
+            </GrayText>
           </li>
         ))}
       </ul>
