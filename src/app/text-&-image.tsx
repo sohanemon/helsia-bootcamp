@@ -14,10 +14,10 @@ export default function TextImage({
   grayText: string;
 }) {
   return (
-    <section className='grid grid-cols-2'>
+    <section className='grid items-center grid-cols-2'>
       <Image src={src} alt='people image' width={590} height={444} />
       <div>
-        <Heading>{heading}</Heading>
+        <Heading className='text-4xl'>{heading}</Heading>
         <GrayText>{grayText}</GrayText>
       </div>
     </section>
