@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function Pricing() {
   return (
-    <section className='grid grid-cols-3 bg-white'>
+    <section className='grid grid-cols-3 gap-20 bg-white rounded-lg shadow'>
       {data.map((el, idx) => (
         <PricingCard {...el} key={el.price} idx={idx + 1} />
       ))}
@@ -20,7 +20,7 @@ const PricingCard = ({
   idx,
 }: (typeof data)[2] & { idx: number }) => {
   return (
-    <div>
+    <div className='p-10 space-y-5'>
       <div className='flex gap-1'>
         <span className='text-xl font-semibold text-gray-500'>$</span>
         <p className='text-6xl font-semibold text-themeIndigo-light'>{price}</p>
@@ -28,7 +28,7 @@ const PricingCard = ({
       <Heading className='text-xl'>Plan {idx}</Heading>
       <GrayText>Best choice for individuals</GrayText>
       <Button outline>Buy now</Button>
-      <ul>
+      <ul className='space-y-2'>
         {Array.from(Array(4)).map((el, idx) => (
           <li key={idx} className='flex gap-2'>
             <Image
