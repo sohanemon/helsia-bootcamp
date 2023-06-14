@@ -14,6 +14,17 @@ export default function Home() {
         heading='Passionate Team Dedicated to Your Health and Fitness'
         grayText='Meet our highly skilled trainers who have years of experience and expertise in military-inspired training. They are passionate about helping people achieve their health and fitness goals.'
       />
+      <TextImage
+        rtl
+        src='/assets/girl.png'
+        heading='Passionate Team Dedicated to Your Health and Fitness'
+        grayText='Meet our highly skilled trainers who have years of experience and expertise in military-inspired training. They are passionate about helping people achieve their health and fitness goals.'
+      />
+      <TextImage
+        src='/assets/team.svg'
+        heading='Passionate Team Dedicated to Your Health and Fitness'
+        grayText='Meet our highly skilled trainers who have years of experience and expertise in military-inspired training. They are passionate about helping people achieve their health and fitness goals.'
+      />
     </main>
   );
 }
