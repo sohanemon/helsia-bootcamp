@@ -1,8 +1,8 @@
 import Navbar from '@/components/navbar';
-import { Inter } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const poppins = Poppins({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Helsia Bootcamp',
@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={inter.className + ' pt-10 px-20'}>
+      <body className={poppins.className + ' pt-10 px-20'}>
         <Navbar />
         {children}
       </body>
