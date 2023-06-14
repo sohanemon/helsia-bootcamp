@@ -8,7 +8,7 @@ export default function Button({
   return (
     <button
       className={cn(
-        'h-12 bg-themeBlue rounded-xl text-white px-8',
+        'h-12 bg-themeBlue rounded-xl shadow-2xl text-white px-8',
         {},
         className
       )}
