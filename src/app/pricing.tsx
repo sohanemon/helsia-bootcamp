@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export default function Pricing() {
   return (
-    <section className='relative grid grid-cols-3 gap-20 bg-white rounded-lg rounded-tl-none shadow'>
+    <section className='relative grid grid-cols-3 gap-20 pb-px pr-10 bg-white rounded-lg rounded-tl-none shadow'>
       {data.map((el, idx) => (
         <PricingCard {...el} key={el.price} idx={idx + 1} />
       ))}
@@ -26,7 +26,7 @@ const PricingCard = ({
   return (
     <div
       className={cn('p-10 space-y-5', {
-        'bg-gradient-to-r from-themeIndigo-dark to-themeIndigo-light rounded-lg':
+        'bg-gradient-to-r from-themeIndigo-dark to-themeIndigo-light rounded-lg h-[105%] self-end':
           offeredPrice,
       })}
     >
