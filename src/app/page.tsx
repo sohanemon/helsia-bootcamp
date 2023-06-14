@@ -4,7 +4,7 @@ import Challenges from './challenges';
 
 export default function Home() {
   return (
-    <main>
+    <main className='mb-96'>
       <Cta />
       <IntenseEffective />
       <Challenges />
