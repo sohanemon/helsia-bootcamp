@@ -9,7 +9,7 @@ export default function Pricing() {
       {data.map((el, idx) => (
         <PricingCard {...el} key={el.price} idx={idx + 1} />
       ))}
-      <div className='absolute grid h-12 font-bold bg-white rounded-lg rounded-b-none shadow px-9 -top-12 font-grot text-themeBlue place-content-center'>
+      <div className='absolute grid h-12 -mb-2 font-bold bg-white rounded-lg rounded-b-none shadow px-9 -top-12 font-grot text-themeBlue place-content-center'>
         Pricing Plan
       </div>
     </section>
