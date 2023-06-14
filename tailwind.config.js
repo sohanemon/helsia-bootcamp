@@ -12,6 +12,11 @@ module.exports = {
     },
     extend: {
       colors: {
+        themeBlue: '#264373',
+        themeIndigo: {
+          dark: '#6462F0',
+          light: '#9190E9',
+        },
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
