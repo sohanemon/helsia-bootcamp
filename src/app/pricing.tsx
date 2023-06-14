@@ -1,6 +1,7 @@
 import Button from '@/components/ui/button';
 import GrayText from '@/components/ui/gray-text';
 import Heading from '@/components/ui/heading';
+import { cn } from '@/lib/utils';
 import Image from 'next/image';
 
 export default function Pricing() {
@@ -23,7 +24,7 @@ const PricingCard = ({
   idx,
 }: (typeof data)[2] & { idx: number }) => {
   return (
-    <div className='p-10 space-y-5'>
+    <div className={cn('p-10 space-y-5', { '': offeredPrice })}>
       <div className='flex gap-1'>
         <span className='text-xl font-semibold text-gray-500'>$</span>
         <p className='text-6xl font-semibold text-themeIndigo-light'>{price}</p>
