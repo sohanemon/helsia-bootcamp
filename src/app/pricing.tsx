@@ -24,7 +24,12 @@ const PricingCard = ({
   idx,
 }: (typeof data)[2] & { idx: number }) => {
   return (
-    <div className={cn('p-10 space-y-5', { '': offeredPrice })}>
+    <div
+      className={cn('p-10 space-y-5', {
+        'bg-gradient-to-r from-themeIndigo-dark to-themeIndigo-light rounded-lg':
+          offeredPrice,
+      })}
+    >
       <div className='flex gap-1'>
         <span className='text-xl font-semibold text-gray-500'>$</span>
         <p className='text-6xl font-semibold text-themeIndigo-light'>{price}</p>
