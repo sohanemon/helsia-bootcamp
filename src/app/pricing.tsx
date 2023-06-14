@@ -31,7 +31,13 @@ const PricingCard = ({
       })}
     >
       <div className='flex gap-1'>
-        <span className='text-xl font-semibold text-gray-500'>$</span>
+        <span
+          className={cn('text-xl font-semibold text-gray-500', {
+            'text-gray-100': offeredPrice,
+          })}
+        >
+          $
+        </span>
         <p className='text-6xl font-semibold text-themeIndigo-light'>{price}</p>
       </div>
       <Heading className='text-xl'>Plan {idx}</Heading>
