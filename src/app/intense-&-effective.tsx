@@ -3,7 +3,7 @@ import Heading from '@/components/ui/heading';
 
 export default function IntenseEffective() {
   return (
-    <div className='grid grid-cols-2 my-10'>
+    <div className='grid grid-cols-2 gap-10 my-16'>
       <Heading>
         Intense and Effective Training Program for Lasting Results
       </Heading>

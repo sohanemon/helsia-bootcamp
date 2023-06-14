@@ -11,8 +11,7 @@ export default function Heading({
       className={cn(
         'text-themeText-dark text-3xl leading-relaxed font-bold font-grot ',
         {
-          'text-4xl leading-normal animate-in slide-in-from-left-full duration-500 ease-out':
-            cta,
+          'text-4xl leading-normal ': cta,
         },
         className
       )}
