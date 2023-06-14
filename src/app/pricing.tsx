@@ -1,3 +1,13 @@
 export default function Pricing() {
-  return <></>;
+  return <section></section>;
 }
+
+const PricingCard = () => {
+  return <></>;
+};
+
+const data = [
+  {
+    title: '',
+  },
+];
