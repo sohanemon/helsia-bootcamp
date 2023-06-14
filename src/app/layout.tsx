@@ -4,6 +4,11 @@ import localFont from 'next/font/local';
 
 import './globals.css';
 
+const grotRegular = localFont({
+  src: './font/SportingGrotesque-Bold.otf',
+  display: 'swap',
+});
+
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
