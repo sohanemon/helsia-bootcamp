@@ -5,8 +5,9 @@ import localFont from 'next/font/local';
 import './globals.css';
 
 const grotRegular = localFont({
-  src: './font/SportingGrotesque-Bold.otf',
+  src: '../font/SportingGrotesque-Bold.otf',
   display: 'swap',
+  variable: '--grot',
 });
 
 const poppins = Poppins({
@@ -25,7 +26,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={poppins.className + ' pt-10 px-20'}>
+      <body
+        className={
+          grotRegular.variable + ' ' + poppins.className + ' pt-10 px-20'
+        }
+      >
         <Navbar />
         {children}
       </body>

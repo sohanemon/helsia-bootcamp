@@ -9,8 +9,8 @@ export default function Heading({
   return (
     <h1
       className={cn(
-        'text-themeText-dark font-bold ',
-        { 'text-4xl tracking-wider': cta },
+        'text-themeText-dark font-bold font-grot ',
+        { 'text-4xl leading-normal': cta },
         className
       )}
       {...props}

@@ -10,13 +10,13 @@ export default function Cta() {
         {/* #todo:left */}
         <Heading cta>
           Where Intense and Fun Training meets{' '}
-          <span className='text-themeIndigo-light'>Motivation!</span>{' '}
+          <span className='text-themeIndigo-light'>Motivation!</span>
           <Image
             src={'/assets/motivation.svg'}
             alt='icon'
-            className='inline-block mb-4'
-            width={60}
-            height={60}
+            className='inline-block mb-4 ml-2'
+            width={50}
+            height={50}
           />
         </Heading>
         <GrayText className='pt-6 pb-7'>
