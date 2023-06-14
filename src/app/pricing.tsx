@@ -26,7 +26,7 @@ const PricingCard = ({
       </div>
       <Heading className='text-xl'>Plan {idx}</Heading>
       <GrayText>Best choice for individuals</GrayText>
-      <Button>Buy now</Button>
+      <Button outline>Buy now</Button>
     </div>
   );
 };
