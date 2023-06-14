@@ -1,4 +1,6 @@
+import Button from '@/components/ui/button';
 import GrayText from '@/components/ui/gray-text';
+import Heading from '@/components/ui/heading';
 
 export default function Pricing() {
   return (
@@ -22,8 +24,9 @@ const PricingCard = ({
         <span className='text-xl font-semibold text-gray-500'>$</span>
         <p className='text-6xl font-semibold text-themeIndigo-light'>{price}</p>
       </div>
-      <p className='text-xl font-semibold font-grot'>Plan {idx}</p>
+      <Heading className='text-xl'>Plan {idx}</Heading>
       <GrayText>Best choice for individuals</GrayText>
+      <Button>Buy now</Button>
     </div>
   );
 };
