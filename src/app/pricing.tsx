@@ -1,6 +1,6 @@
 export default function Pricing() {
   return (
-    <section>
+    <section className='bg-white'>
       {data.map((el, idx) => (
         <PricingCard {...el} key={el.price} idx={idx} />
       ))}
@@ -13,7 +13,11 @@ const PricingCard = ({
   price,
   offeredPrice,
 }: (typeof data)[2] & { idx: number }) => {
-  return <div></div>;
+  return (
+    <div>
+      <span className='font-semibold'>$</span>
+    </div>
+  );
 };
 
 const data = [
