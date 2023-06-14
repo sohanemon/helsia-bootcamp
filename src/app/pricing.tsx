@@ -15,7 +15,10 @@ const PricingCard = ({
 }: (typeof data)[2] & { idx: number }) => {
   return (
     <div>
-      <span className='font-semibold'>$</span>
+      <div className='flex gap-1'>
+        <span className='text-xl font-semibold text-gray-500'>$</span>
+        <p className='text-6xl font-semibold text-themeIndigo-light'>{price}</p>
+      </div>
     </div>
   );
 };
