@@ -15,7 +15,13 @@ export default function TextImage({
 }) {
   return (
     <section className='grid items-center grid-cols-2'>
-      <Image src={src} alt='people image' width={590} height={444} />
+      <Image
+        src={src}
+        alt='people image'
+        width={590}
+        height={444}
+        className={rtl ? 'order-last' : ''}
+      />
       <div>
         <Heading className='mb-4 text-4xl leading-normal'>{heading}</Heading>
         <GrayText>{grayText}</GrayText>
