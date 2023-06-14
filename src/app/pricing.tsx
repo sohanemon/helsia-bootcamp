@@ -26,15 +26,21 @@ const PricingCard = ({
   return (
     <div
       className={cn('p-10 space-y-5', {
-        'bg-gradient-to-r from-themeIndigo-dark to-themeIndigo-light rounded-lg h-[105%] self-end':
+        'bg-gradient-to-r relative from-themeIndigo-dark overflow-hidden to-themeIndigo-light rounded-lg h-[105%] self-end':
           offeredPrice,
       })}
     >
       {offeredPrice && (
         <Button
           outline
-          className='text-white border-none bg-themeBg-ellipse-light'
+          className='absolute top-0 left-0 h-10 text-white border-none rounded-none rounded-br-lg w-max bg-themeBg-ellipse-light'
         >
+          <Image
+            src={'/assets/star.svg'}
+            alt='star icon'
+            width={17}
+            height={15}
+          />
           Buy now
         </Button>
       )}
