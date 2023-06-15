@@ -73,7 +73,7 @@ const PricingCard = ({
           <>
             <p className='relative self-end mb-2 text-lg font-semibold tracking-wider text-white/70'>
               ${offeredPrice}
-              <span className='w-full h-0.5 -rotate-[30deg] absolute top-[40%] bg-white' />
+              <span className='block w-full h-0.5 -rotate-[30deg] absolute top-[40%] bg-white' />
             </p>
           </>
         )}
