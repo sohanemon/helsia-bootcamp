@@ -23,8 +23,14 @@ const TestimonialCard = ({
 }: (typeof data)[0]) => {
   return (
     <div className='rounded-lg shadow-md p-11'>
-      <GrayText className='mb-12 opacity-80'>
-        <Image src={'/assets/qoute.svg'} alt='icon' width={18} height={18} />
+      <GrayText className='flex mb-12 opacity-80'>
+        <Image
+          src={'/assets/qoute.svg'}
+          alt='icon'
+          width={22}
+          height={22}
+          className='self-start'
+        />
         <span> {feedback}</span>
       </GrayText>
       <div className='flex items-center gap-4'>
