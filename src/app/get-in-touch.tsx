@@ -20,9 +20,13 @@ export default function GetInTouch() {
           </div>
         ))}
       </div>
-      <div className='flex items-stretch'>
-        <input type='text' placeholder='yourname@mail.com' />
-        <Button className='bg-themeText-dark'>Get Started</Button>
+      <div className='flex items-stretch justify-center gap-5'>
+        <input
+          type='text'
+          placeholder='yourname@mail.com'
+          className='pl-6 placeholder:tracking-wider placeholder:text-xs rounded-xl'
+        />
+        <Button className='text-xs bg-themeText-dark'>Get Started</Button>
       </div>
     </section>
   );
