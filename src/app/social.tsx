@@ -1,10 +1,27 @@
+import Image from 'next/image';
+import Link from 'next/link';
+
 export default function Social() {
-  return <></>;
+  return (
+    <div className='flex items-center gap-6'>
+      {icons.map((el) => (
+        <Link key={el} href={'#'}>
+          <Image
+            src={el}
+            alt='social'
+            width={20}
+            height={20}
+            className='w-5 aspect-square'
+          />
+        </Link>
+      ))}
+    </div>
+  );
 }
 const icons = [
-  '/public/assets/facebook.svg',
-  '/public/assets/twitter.svg',
-  '/public/assets/instagram.svg',
-  '/public/assets/youtube.svg',
-  '/public/assets/discord.svg',
+  '/assets/facebook.svg',
+  '/assets/twitter.svg',
+  '/assets/instagram.svg',
+  '/assets/youtube.svg',
+  '/assets/discord.svg',
 ];
