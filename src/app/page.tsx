@@ -3,6 +3,7 @@ import IntenseEffective from './intense-&-effective';
 import Challenges from './challenges';
 import TextImage from './text-&-image';
 import Pricing from './pricing';
+import Testimonial from './testimonial';
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         grayText='During the training program, we provide healthy, delicious meals cooked from scratch. Enjoy a balanced diet that fuels your body for optimal performance.'
       />
       <Pricing />
+      <Testimonial />
     </main>
   );
 }
