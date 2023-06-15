@@ -23,7 +23,9 @@ export default function TextImage({
         className={rtl ? 'sm:order-last sm:ml-10' : 'sm:-ml-10'}
       />
       <div>
-        <Heading className='mb-4 text-4xl leading-normal'>{heading}</Heading>
+        <Heading className='mb-4 text-xl leading-normal sm:text-4xl'>
+          {heading}
+        </Heading>
         <GrayText>{grayText}</GrayText>
       </div>
     </section>
