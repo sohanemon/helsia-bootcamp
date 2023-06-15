@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Testimonial() {
   return (
-    <section>
+    <section className='my-20'>
       <Heading className='text-center'>Testimonials</Heading>
       <div className='grid grid-cols-2 gap-12'>
         {data.map((el) => (
@@ -22,7 +22,7 @@ const TestimonialCard = ({
   occupation,
 }: (typeof data)[0]) => {
   return (
-    <div className='rounded-lg shadow-md p-11'>
+    <div className='shadow-2xl rounded-xl shadow-gray-200 p-11'>
       <GrayText className='flex mb-12 opacity-80 '>
         <Image
           src={'/assets/qoute.svg'}
