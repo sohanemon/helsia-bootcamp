@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function GetInTouch() {
   return (
-    <section className='p-20 bg-gradient-to-r from-themeIndigo-dark to-themeIndigo-light rounded-2xl'>
+    <section className='p-20 pb-0 bg-gradient-to-r from-themeIndigo-dark to-themeIndigo-light rounded-2xl'>
       <h1 className='mb-4 -mt-10 text-4xl leading-normal text-center text-white font-grot '>
         Get In Touch
       </h1>
@@ -20,7 +20,7 @@ export default function GetInTouch() {
           </div>
         ))}
       </div>
-      <div className='flex items-stretch justify-center gap-5'>
+      <div className='flex items-stretch justify-center gap-5 py-12'>
         <input
           type='text'
           placeholder='yourname@mail.com'
