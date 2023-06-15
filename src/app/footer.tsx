@@ -2,7 +2,7 @@ import Social from './social';
 
 export default function Footer() {
   return (
-    <footer className='relative p-20 -mx-20 flex text-white -mt-14 gap-[20%] bg-themeBlue -z-20 [&_p]:tracking-wider'>
+    <footer className='relative max-sm:flex-col p-20 -mx-20 flex text-white -mt-14 gap-[20%] bg-themeBlue -z-20 [&_p]:tracking-wider'>
       <div>
         <p className='font-bold'>Logo</p>
         <p className='my-8 text-sm opacity-60'>
@@ -10,7 +10,7 @@ export default function Footer() {
         </p>
         <Social />
       </div>
-      <div className='grid w-1/2 grid-cols-3'>
+      <div className='grid w-1/2 grid-cols-1 max-sm:gap-10 max-sm:mt-10 sm:grid-cols-3'>
         {data.map((item) => (
           <div className='space-y-2' key={item.menu}>
             <p className='mb-6 font-bold'>{item.menu}</p>

@@ -28,7 +28,10 @@ export default function RootLayout({
     <html lang='en'>
       <body
         className={
-          grotRegular.variable + ' ' + poppins.className + ' pt-10 px-20'
+          grotRegular.variable +
+          ' ' +
+          poppins.className +
+          ' pt-10 p-2   sm:px-20'
         }
       >
         <Navbar />
