@@ -25,7 +25,7 @@ export default function Home() {
         grayText='Our training program focuses on high-intensity military-inspired exercises that improve both physical and mental well-being. Each participant receives personalized training schedules and diet plans tailored to their goals.'
       />
       <TextImage
-        src='/assets/team.svg'
+        src='/assets/muscle.png'
         heading='Providing Food and Accommodation for your Journey'
         grayText='During the training program, we provide healthy, delicious meals cooked from scratch. Enjoy a balanced diet that fuels your body for optimal performance.'
       />
