@@ -24,7 +24,7 @@ export default function Cta() {
           fitness. Explore our website to discover the incredible opportunities
           that await you.
         </GrayText>
-        <div className='flex items-center gap-9'>
+        <div className='flex items-center max-sm:flex-col gap-9'>
           <Button>
             Get Started Today
             <Image

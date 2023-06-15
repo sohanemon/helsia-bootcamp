@@ -9,9 +9,9 @@ export default function Heading({
   return (
     <h1
       className={cn(
-        'text-themeText-dark text-3xl leading-relaxed font-bold font-grot ',
+        'text-themeText-dark text-xl sm:text-3xl leading-relaxed font-bold font-grot ',
         {
-          'text-4xl leading-normal ': cta,
+          'text-2xl sm:text-4xl leading-normal ': cta,
         },
         className
       )}
