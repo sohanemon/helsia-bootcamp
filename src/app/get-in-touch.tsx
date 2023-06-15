@@ -2,15 +2,19 @@ import Image from 'next/image';
 
 export default function GetInTouch() {
   return (
-    <section className='bg-gradient-to-r from-themeIndigo-dark to-themeIndigo-light'>
-      <h1 className='text-4xl leading-normal text-center text-white '>
+    <section className='p-20 bg-gradient-to-r from-themeIndigo-dark to-themeIndigo-light'>
+      <h1 className='text-4xl leading-normal text-center text-white font-grot '>
         Get In Touch
       </h1>
-      <div>
+      <div className='flex items-center justify-between text-white'>
         {data.map((el) => (
-          <div key={el.title}>
-            <div>
+          <div key={el.title} className='flex items-center gap-6'>
+            <div className='p-5 rounded-2xl bg-white/20'>
               <Image src={el.icon} alt={el.title} width={28} height={32} />
+            </div>
+            <div>
+              <p className='font-bold tracking-wider'>{el.title}</p>
+              <p>{el.desc}</p>
             </div>
           </div>
         ))}
