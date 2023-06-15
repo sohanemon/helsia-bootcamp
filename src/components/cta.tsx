@@ -5,8 +5,8 @@ import Heading from './ui/heading';
 
 export default function Cta() {
   return (
-    <section className='grid items-center grid-cols-2'>
-      <div className='pr-20'>
+    <section className='grid items-center grid-cols-2 max-sm:grid-cols-1 max-sm:justify-items-center'>
+      <div className='sm:pr-20'>
         {/* #todo:left */}
         <Heading cta>
           Where Intense and Fun Training meets{' '}
@@ -46,7 +46,7 @@ export default function Cta() {
           </Button>
         </div>
       </div>
-      <div>
+      <div className='max-sm:order-first'>
         {/* #todo:right */}
         <Image
           src={'/assets/hero.svg'}
