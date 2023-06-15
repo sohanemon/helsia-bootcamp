@@ -7,7 +7,7 @@ export default function GetInTouch() {
       <h1 className='mb-4 -mt-10 text-4xl leading-normal text-center text-white font-grot '>
         Get In Touch
       </h1>
-      <div className='flex items-center justify-between text-white max-sm:flex-col'>
+      <div className='flex justify-between text-white max-sm:gap-4 sm:items-center max-sm:flex-col'>
         {data.map((el) => (
           <div key={el.title} className='flex items-center gap-6'>
             <div className='p-5 rounded-2xl bg-white/20'>
@@ -20,13 +20,15 @@ export default function GetInTouch() {
           </div>
         ))}
       </div>
-      <div className='flex items-stretch justify-center gap-5 py-12'>
+      <div className='flex justify-center gap-5 py-12 sm:items-stretch max-sm:flex-col'>
         <input
           type='text'
           placeholder='yourname@mail.com'
           className='pl-5 placeholder:tracking-wider placeholder:text-sm rounded-xl w-[min(100%,500px)]'
         />
-        <Button className='text-sm bg-themeText-dark'>Get Started</Button>
+        <Button className='flex justify-center text-sm bg-themeText-dark'>
+          Get Started
+        </Button>
       </div>
     </section>
   );
