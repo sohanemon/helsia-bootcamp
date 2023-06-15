@@ -23,8 +23,9 @@ const TestimonialCard = ({
 }: (typeof data)[0]) => {
   return (
     <div className='rounded-lg shadow-md p-11'>
-      <GrayText className='opacity-80'>{feedback}</GrayText>
-      <div>
+      <GrayText>&ldquo;</GrayText>
+      <GrayText className='mb-12 opacity-80'>{feedback}</GrayText>
+      <div className='flex items-center gap-4'>
         <Image
           src={image}
           alt={name}
@@ -32,8 +33,8 @@ const TestimonialCard = ({
           height={69}
           className='rounded-[1.2rem] bg-themeBg-ellipse-pink/70'
         />
-        <div>
-          <p>{name}</p>
+        <div className='space-y-2'>
+          <p className='font-semibold tracking-wider'>{name}</p>
           <GrayText>{occupation}</GrayText>
         </div>
       </div>
