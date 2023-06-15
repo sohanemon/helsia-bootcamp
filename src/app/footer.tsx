@@ -2,7 +2,7 @@ import Social from './social';
 
 export default function Footer() {
   return (
-    <footer className='relative max-sm:flex-col p-20 -mx-20 flex text-white -mt-14 gap-[20%] bg-themeBlue -z-20 [&_p]:tracking-wider'>
+    <footer className='relative max-sm:flex-col p-2 sm:p-20 -mx-2 sm:-mx-20 flex text-white -mt-14 gap-[20%] bg-themeBlue -z-20 [&_p]:tracking-wider'>
       <div>
         <p className='font-bold'>Logo</p>
         <p className='my-8 text-sm opacity-60'>
