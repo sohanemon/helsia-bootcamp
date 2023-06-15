@@ -24,9 +24,9 @@ export default function GetInTouch() {
         <input
           type='text'
           placeholder='yourname@mail.com'
-          className='pl-6 placeholder:tracking-wider placeholder:text-xs rounded-xl'
+          className='pl-5 placeholder:tracking-wider placeholder:text-sm rounded-xl'
         />
-        <Button className='text-xs bg-themeText-dark'>Get Started</Button>
+        <Button className='text-sm bg-themeText-dark'>Get Started</Button>
       </div>
     </section>
   );
