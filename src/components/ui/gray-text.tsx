@@ -8,7 +8,7 @@ export default function GrayText({
   return (
     <p
       className={cn(
-        'text-themeText-dark/60 tracking-wide leading-7 ',
+        'text-themeText-dark/60 max-sm:text-sm tracking-wide leading-7 ',
         className
       )}
       {...props}
