@@ -24,7 +24,7 @@ export default function GetInTouch() {
         <input
           type='text'
           placeholder='yourname@mail.com'
-          className='pl-5 placeholder:tracking-wider placeholder:text-sm rounded-xl'
+          className='pl-5 placeholder:tracking-wider placeholder:text-sm rounded-xl w-[min(100%,500px)]'
         />
         <Button className='text-sm bg-themeText-dark'>Get Started</Button>
       </div>
