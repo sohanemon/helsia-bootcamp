@@ -5,6 +5,7 @@ import TextImage from './text-&-image';
 import Pricing from './pricing';
 import Testimonial from './testimonial';
 import GetInTouch from './get-in-touch';
+import Footer from './footer';
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
       <Pricing />
       <Testimonial />
       <GetInTouch />
+      <Footer />
     </main>
   );
 }
