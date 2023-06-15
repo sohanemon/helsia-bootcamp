@@ -41,8 +41,18 @@ const PricingCard = ({
             width={17}
             height={15}
           />
-          Buy now
+          Most Popular{' '}
         </Button>
+      )}
+      {offeredPrice && (
+        <>
+          <Heading className={cn('text-xl', { 'text-gray-100': offeredPrice })}>
+            Plan {idx}
+          </Heading>
+          <GrayText className={cn({ 'text-gray-300': offeredPrice })}>
+            {title}
+          </GrayText>
+        </>
       )}
       <div className='flex gap-1'>
         <span
@@ -59,13 +69,25 @@ const PricingCard = ({
         >
           {price}
         </p>
+        {offeredPrice && (
+          <>
+            <p className='relative self-end mb-2 text-lg font-semibold tracking-wider text-white/70'>
+              ${offeredPrice}
+              <div className='w-full h-0.5 -rotate-[30deg] absolute top-[40%] bg-white' />
+            </p>
+          </>
+        )}
       </div>
-      <Heading className={cn('text-xl', { 'text-gray-100': offeredPrice })}>
-        Plan {idx}
-      </Heading>
-      <GrayText className={cn({ 'text-gray-300': offeredPrice })}>
-        {title}
-      </GrayText>
+      {!offeredPrice && (
+        <>
+          <Heading className={cn('text-xl', { 'text-gray-100': offeredPrice })}>
+            Plan {idx}
+          </Heading>
+          <GrayText className={cn({ 'text-gray-300': offeredPrice })}>
+            {title}
+          </GrayText>
+        </>
+      )}
       <Button
         outline
         className={cn({
@@ -104,7 +126,7 @@ const data = [
   },
   {
     title: 'Best choice for priority support',
-    price: 160,
-    offeredPrice: 129,
+    price: 129,
+    offeredPrice: 160,
   },
 ];

@@ -82,5 +82,5 @@ module.exports = {
       grot: 'var(--grot)',
     },
   },
-  plugins: [require('tailwindcss-animate')],
+  plugins: [],
 };
