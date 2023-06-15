@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 export default function GetInTouch() {
   return (
-    <section className='p-20 bg-gradient-to-r from-themeIndigo-dark to-themeIndigo-light'>
-      <h1 className='text-4xl leading-normal text-center text-white font-grot '>
+    <section className='p-20 bg-gradient-to-r from-themeIndigo-dark to-themeIndigo-light rounded-2xl'>
+      <h1 className='mb-4 -mt-10 text-4xl leading-normal text-center text-white font-grot '>
         Get In Touch
       </h1>
       <div className='flex items-center justify-between text-white'>
@@ -14,7 +14,7 @@ export default function GetInTouch() {
             </div>
             <div>
               <p className='font-bold tracking-wider'>{el.title}</p>
-              <p>{el.desc}</p>
+              <p className='font-medium'>{el.desc}</p>
             </div>
           </div>
         ))}
