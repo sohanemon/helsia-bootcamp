@@ -24,7 +24,7 @@ export default function GetInTouch() {
         <input
           type='text'
           placeholder='yourname@mail.com'
-          className='pl-5 placeholder:tracking-wider placeholder:text-sm rounded-xl w-[min(100%,500px)]'
+          className='max-sm:h-12 pl-5 placeholder:tracking-wider placeholder:text-sm rounded-xl w-[min(100%,500px)]'
         />
         <Button className='flex justify-center text-sm bg-themeText-dark'>
           Get Started
