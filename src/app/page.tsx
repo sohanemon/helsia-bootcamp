@@ -9,7 +9,7 @@ import Footer from './footer';
 
 export default function Home() {
   return (
-    <main className='mb-96'>
+    <main>
       <Cta />
       <IntenseEffective />
       <Challenges />
