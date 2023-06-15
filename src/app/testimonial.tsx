@@ -23,13 +23,13 @@ const TestimonialCard = ({
 }: (typeof data)[0]) => {
   return (
     <div className='rounded-lg shadow-md p-11'>
-      <GrayText className='flex mb-12 opacity-80'>
+      <GrayText className='flex mb-12 opacity-80 '>
         <Image
           src={'/assets/qoute.svg'}
           alt='icon'
           width={22}
           height={22}
-          className='self-start'
+          className='self-start mr-0.5 '
         />
         <span> {feedback}</span>
       </GrayText>
@@ -63,6 +63,6 @@ const data = [
     name: 'Ada Apose',
     occupation: 'Designer Graphic',
     feedback:
-      'exercise used to be a boring thing for me, but after following helsia I became fond of sports and sports became my new hobby. I participate in sports 5 times a week.',
+      'Exercise used to be a boring thing for me, but after following helsia I became fond of sports and sports became my new hobby. I participate in sports 5 times a week.',
   },
 ];
