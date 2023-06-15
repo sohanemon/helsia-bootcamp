@@ -12,10 +12,10 @@ export default function Footer() {
       </div>
       <div className='grid w-1/2 grid-cols-3'>
         {data.map((item) => (
-          <div key={item.menu}>
-            <p className='font-bold'>{item.menu}</p>
+          <div className='space-y-2' key={item.menu}>
+            <p className='mb-6 font-bold'>{item.menu}</p>
             {item.subMenus.map((subItem) => (
-              <p className='text-sm opacity-60' key={subItem}>
+              <p className='text-sm cursor-pointer opacity-60' key={subItem}>
                 {subItem}
               </p>
             ))}
