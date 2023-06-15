@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function GetInTouch() {
   return (
     <section className='bg-gradient-to-r from-themeIndigo-dark to-themeIndigo-light'>
@@ -6,7 +8,11 @@ export default function GetInTouch() {
       </h1>
       <div>
         {data.map((el) => (
-          <div key={el.title}></div>
+          <div key={el.title}>
+            <div>
+              <Image src={el.icon} alt={el.title} width={28} height={32} />
+            </div>
+          </div>
         ))}
       </div>
     </section>
