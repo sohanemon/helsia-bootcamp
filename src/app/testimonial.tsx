@@ -6,7 +6,7 @@ export default function Testimonial() {
   return (
     <section className='my-20'>
       <Heading className='text-center'>Testimonials</Heading>
-      <div className='grid grid-cols-2 gap-12'>
+      <div className='grid grid-cols-1 gap-12 sm:grid-cols-2'>
         {data.map((el) => (
           <TestimonialCard key={el.feedback} {...el} />
         ))}

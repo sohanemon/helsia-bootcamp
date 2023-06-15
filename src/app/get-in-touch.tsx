@@ -7,7 +7,7 @@ export default function GetInTouch() {
       <h1 className='mb-4 -mt-10 text-4xl leading-normal text-center text-white font-grot '>
         Get In Touch
       </h1>
-      <div className='flex items-center justify-between text-white'>
+      <div className='flex items-center justify-between text-white max-sm:flex-col'>
         {data.map((el) => (
           <div key={el.title} className='flex items-center gap-6'>
             <div className='p-5 rounded-2xl bg-white/20'>

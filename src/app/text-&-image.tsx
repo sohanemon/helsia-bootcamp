@@ -14,13 +14,13 @@ export default function TextImage({
   grayText: string;
 }) {
   return (
-    <section className='grid items-center grid-cols-2'>
+    <section className='grid items-center grid-cols-1 sm:grid-cols-2'>
       <Image
         src={src}
         alt='people image'
         width={590}
         height={444}
-        className={rtl ? 'order-last ml-10' : '-ml-10'}
+        className={rtl ? 'sm:order-last sm:ml-10' : 'sm:-ml-10'}
       />
       <div>
         <Heading className='mb-4 text-4xl leading-normal'>{heading}</Heading>

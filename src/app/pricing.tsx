@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export default function Pricing() {
   return (
-    <section className='relative grid grid-cols-3 gap-20 pb-px pr-10 my-20 bg-white rounded-lg rounded-tl-none shadow'>
+    <section className='relative grid grid-cols-1 gap-20 pb-px pr-10 my-20 bg-white rounded-lg rounded-tl-none shadow sm:grid-cols-3'>
       {data.map((el, idx) => (
         <PricingCard {...el} key={el.price} idx={idx + 1} />
       ))}
