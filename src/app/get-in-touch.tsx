@@ -1,3 +1,4 @@
+import Button from '@/components/ui/button';
 import Image from 'next/image';
 
 export default function GetInTouch() {
@@ -18,6 +19,10 @@ export default function GetInTouch() {
             </div>
           </div>
         ))}
+      </div>
+      <div className='flex items-stretch'>
+        <input type='text' placeholder='yourname@mail.com' />
+        <Button className='bg-themeText-dark'>Get Started</Button>
       </div>
     </section>
   );
