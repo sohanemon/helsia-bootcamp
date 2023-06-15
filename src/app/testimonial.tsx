@@ -32,6 +32,10 @@ const TestimonialCard = ({
           height={69}
           className='rounded-[1.2rem] bg-themeBg-ellipse-pink/70'
         />
+        <div>
+          <p>{name}</p>
+          <GrayText>{occupation}</GrayText>
+        </div>
       </div>
     </div>
   );
@@ -46,7 +50,7 @@ const data = [
       "It's great to be able to work out from home and be helped by the helsia. My day feels fresher when I regularly participate in this fun sport. Good luck to the coaches.",
   },
   {
-    image: '/assets/ada.svg',
+    image: '/assets/ada.png',
     name: 'Ada Apose',
     occupation: 'Designer Graphic',
     feedback:
